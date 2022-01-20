@@ -103,6 +103,7 @@ function gameOver() {
     gameOverDisplay.classList.add('show')
     if (score > highscore) {
        localStorage.setItem('highscore', JSON.stringify(score))
+       highscoreDisplay.textContent = score
     }
 }
 
