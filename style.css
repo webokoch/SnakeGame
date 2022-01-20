@@ -1,0 +1,115 @@
+:root {
+    --color1: rgb(199, 196, 20);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1597840900616-664e930c29df?w=1600&h=1600);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+}
+
+section {
+    padding: 16px;
+    text-align: center;
+}
+
+h1 {
+    background-color: black;
+    font-family: 'Faster One', cursive;
+    font-size: 64px;
+    margin-top: 12px;
+    color: var(--color1);
+}
+
+.scores {
+    margin: auto;
+    color: black;
+    text-align: center;
+    width: 400px;
+    background-color: var(--color1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    line-height: 2.5em;
+    border: solid 6px black;
+    border-bottom: none;
+    opacity: 0.8;
+}
+
+.grid {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    border: solid 6px var(--color1);
+    border-top: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    background-color: black;
+}
+
+.square {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.snake {
+    background-color: var(--color1);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.fire {
+    font-size: 40px;
+}
+
+.end {
+    margin-top: 40px;
+    font-size: 60px;
+    color: rgb(255, 4, 66);
+    position: absolute;
+    top: auto;
+    left: auto;
+    display: none;
+    animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+.show {
+    display: unset;
+}
+
+button {
+    margin-top: 12px;
+    padding: 16px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    color: var(--color1);
+    font-size: 24px;
+    background-color: black;
+    border: none;
+}
+
+button:focus {
+    border: none;
+    outline: none;
+}
+
