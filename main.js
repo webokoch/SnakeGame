@@ -30,7 +30,7 @@ function createGrid() {
 createGrid()
 
 function startGame() {
-    highscoreDisplay.textContent = highscore
+    highscoreDisplay.textContent = JSON.parse(localStorage.getItem('highscore'))
     gameOverDisplay.classList.remove('show')
     squares[currentSnake[0]].innerText = ''
     currentSnake.forEach(index => squares[index].classList.remove('snake'))
